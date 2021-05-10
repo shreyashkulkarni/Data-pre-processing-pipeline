@@ -1,2 +1,0 @@
-# Data-pre-processing-pipeline
-Fetching data from API/any DB and then pushing the data into the RabbitMQ input queue. From the RabbitMq input queue consume it and perform some aggregations according to need how the data is needed in the worker script. From the worker script push the data to the storage queue. Storage script accepts the data from the storage queue and send its to the ElasticSearch DB installed on a Docker container. 
